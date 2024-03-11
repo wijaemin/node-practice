@@ -6,7 +6,6 @@ const id = document.querySelector("#id")
 
 
 
-console.log(id);
 
 loginBtn.addEventListener("click", login);
 
@@ -24,6 +23,16 @@ function login() {
 
     })
     .then((res)=>res.json())
-    .then(console.log)
+    .then((res)=>{
+        if(res.success){
+            location.href="/";
+        }
+        else{
+            alert(res.msg);
+        }
+    })
+    .catch((err)=>{
+        console.error("로그인 중 에러 발생");
+    })
 }
 
