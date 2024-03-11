@@ -9,4 +9,6 @@ router.get("/",ctrl.home);
 
 router.get("/login",ctrl.login);
 
+// router.post("/login",a.login);
+
 module.exports = router;
