@@ -5,10 +5,10 @@ const router = express.Router();
 
 const ctrl = require("./home.ctrl");
 
-router.get("/",ctrl.home);
+router.get("/",ctrl.show.home);
 
-router.get("/login",ctrl.login);
+router.get("/login",ctrl.show.login);
 
-// router.post("/login",a.login);
+router.post("/login",ctrl.process.login);
 
 module.exports = router;
