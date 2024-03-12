@@ -24,8 +24,10 @@ const process={
         console.log(response);
 
         return res.json(response);
-    }
+    },
+    // register : (req,res) =>{
 
+    // }
 };
 
 
