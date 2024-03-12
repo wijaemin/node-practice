@@ -18,17 +18,15 @@ const show ={
 
 
 const process={
-    login : (req,res) => {
+     login : async (req,res) => {
         const user = new User(req.body);
-        const response = user.login();
-        console.log(response);
+        const response = await user.login();
 
         return res.json(response);
     },
     register : (req,res) =>{
         const user = new User(req.body);
         const response = user.register();
-        console.log(response);
 
         return res.json(response);
     }
