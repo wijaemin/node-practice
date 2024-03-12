@@ -7,10 +7,6 @@ const id = document.querySelector("#id"),
     registerBtn =document.querySelector("#button");
 
 
-console.log("hello");
-
-
-
 registerBtn.addEventListener("click", register);
 
 function register() {
