@@ -18,6 +18,7 @@ app.use(bodyParser.json()); //bodyParser가 json 데이터를 파싱 해올수�
 //공백 등과 같은 문자가 포함될 경우
 //제대로 인식되지 않는 문제 해결
 app.use(bodyParser.urlencoded({ extended :true}));
+
 app.use("/", home);// use는 미들웨어를 등록해주는 메서드
 
 module.exports = app;
